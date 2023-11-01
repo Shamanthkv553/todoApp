@@ -1,0 +1,190 @@
+
+body
+div .container
+  .todo
+        h2 todo img src /h2
+.row 
+input text id inpb place
+button onclick ="addTask()" add
+
+
+ul id listconta
+li class checked tak1
+li task2
+
+
+script src=script.js
+         
+body
+
+
+
+
+*{
+mp0
+ff pop ss
+bs bb
+}
+
+.container{
+width 100%
+heigh 100vh
+linear gradient : linear -gradient(135deg,#153677,#4e085f);
+padding :10px;
+
+
+}
+
+.todo
+w 100%
+max-width :540[x
+bck:fff
+margin 100 auto 20px
+padding"4- 30 70
+bordr raduis :10
+
+
+todo h2
+
+color 
+display :fle
+alig n items :centere
+margin :buttom :20
+
+h2 img
+
+width :30px;
+ml 10px
+
+.row 
+display :flex;
+align items centre
+justify conent centre
+
+bck 
+br 30 px
+paddle 20 pc
+mb 25px;
+
+
+input
+
+flex 1;
+border none
+outline none
+vakgroung :transparent;
+
+button
+
+border none
+outline none
+padding 16px 50px
+background ff5945
+color:ff
+fsize :16px
+cursor :pointer
+border radius :40px
+
+
+ul li 
+ls ;none
+padding17px 
+fontsize 12px 8px 12px 50px;
+user-selcect none
+cursor :pointer
+postion :relative
+
+
+uli :: before{
+content :'';
+position: abs
+height :28px;
+width:28px;
+bi :url();
+background-size;
+background postion :center;
+top :12px;
+}
+
+ul li.checked
+{
+
+color :#555;
+td :line troughl;
+}
+ul li.checked :before
+{
+content :'';
+position: abs
+height :28px;
+width:28px;
+bi :url();
+background-size;
+background postion :center;
+top :12px;
+
+}
+
+ul li span 
+postion abs
+right 0;
+top 5px
+width 40px;
+height 40px;
+fs 22px
+color 555
+lineheigh 40px
+text align centre;
+brd radus circle
+
+ 
+ul li span :hover {
+bck : #edeef0;
+
+script .js
+
+
+const indput box =get element by id("inputbox"
+list container
+
+
+function addTask(){
+if(inputBox.value ===''){
+alert ("you must write something!");
+}
+else {
+let li=dcocument .createelment(li)
+li.innerHtl=inputBox.value;
+listcontainer.appendchild(li);
+let span =document.createElement("span");
+span.innerHtml='\u00d7';
+li.appendhid(span);
+
+}
+
+inputBox.value ="";
+saveData();
+}
+
+listContainer.addEventListener("click",function(e){
+if(e.target.tagname==="LI"){
+e.target.clssList.toggle("checked"0;
+saveData();
+else if(e.target.tegName ===span
+e.target.parentelement.remove();
+saveData();
+}
+}, false);
+
+
+function saveData(){
+localStorage.setItem("data",listContainer.innerHtml);
+}
+
+
+function showTask(){
+listContainer.innerHtml =localstorage.getItem("data");
+}
+showTask();
+
+
