@@ -9,9 +9,10 @@
 .container{
 
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(135deg,#153677,#4e085f);
     padding :10px;
+    box-sizing: border-box;
 
 }
 .todo{
@@ -69,10 +70,11 @@ button{
 ul li{
     list-style: none;
     font-size: 17px;
-    padding: 16px 8px 12px 50px;
+    padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
+    word-wrap: break-word;
 }
 
 ul li::before{
@@ -122,4 +124,28 @@ ul li span:hover{
     background-color: orange;
 
 }
+
+/* Your existing CSS */
+
+/* Add a media query for screens with a maximum width of 600px (or your desired value) */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .container {
+        max-width: 100%; /* Adjust the max-width for smaller screens */
+    }
+
+    input {
+        margin-bottom: 10px;
+        padding: 10px; /* Adjust padding for better centering */
+        text-align: center; /* Center the text within the input field */
+    }
+
+    button {
+        padding: 12px 40px;
+    }
+}
+
 

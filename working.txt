@@ -89,7 +89,7 @@ border radius :40px
 ul li 
 ls ;none
 padding17px 
-fontsize 12px 8px 12px 50px;
+nargin 12px 8px 12px 50px;
 user-selcect none
 cursor :pointer
 postion :relative
@@ -101,7 +101,7 @@ position: abs
 height :28px;
 width:28px;
 bi :url();
-background-size;
+background-size:cover;  //it will make only one image in the size
 background postion :center;
 top :12px;
 }
