@@ -124,23 +124,19 @@ ul li span:hover{
     background-color: orange;
 
 }
-
-/* Your existing CSS */
-
-/* Add a media query for screens with a maximum width of 600px (or your desired value) */
 @media (max-width: 600px) {
     .row {
         flex-direction: column;
         padding: 10px;
     }
     .container {
-        max-width: 100%; /* Adjust the max-width for smaller screens */
+        max-width: 100%;
     }
 
     input {
         margin-bottom: 10px;
-        padding: 10px; /* Adjust padding for better centering */
-        text-align: center; /* Center the text within the input field */
+        padding: 10px;
+        text-align: center;
     }
 
     button {
